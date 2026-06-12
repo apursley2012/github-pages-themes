@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arcane Portfolio Archive</title><link rel="stylesheet" href="grimoire.css">
+</head>
+<body>
+<div class="sky"><span></span><span></span><span></span></div>
+<header class="masthead">
+  <p class="sigil">✦ THE ARCANE PORTFOLIO ARCHIVE ✦</p>
+  <h1>Choose the spell your portfolio should cast.</h1>
+  <p class="intro">Open the index, filter the shelves, and inspect a theme before carrying it into your own GitHub Pages collection.</p>
+  <nav><a href="#shelves">Browse shelves</a><a href="https://github.com/apursley2012/github-pages-themes">Collection repository</a></nav>
+</header>
+<main>
+  <section class="oracle-panel">
+    <div><p class="smallcap">Archive ledger</p><h2 id="result-count">Reading the shelves…</h2></div>
+    <label><span>Search the grimoire</span><input id="query" type="search" placeholder="Search themes or moods"></label>
+    <label><span>Choose a shelf</span><select id="category"><option value="all">All shelves</option></select></label>
+  </section>
+  <section id="category-runes" class="runes" aria-label="Category shortcuts"></section>
+  <section id="shelves" class="shelves" aria-live="polite"></section>
+</main>
+<dialog id="detail"><button id="close" aria-label="Close">×</button><div id="detail-body"></div></dialog>
+<footer>Curated by Alysha Pursley · GitHub Pages Theme Collection</footer>
+<script src="archive.js"></script>
+</body></html>
